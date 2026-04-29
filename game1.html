@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Juego 1 | Arvenia Interactive</title>
+
+        <link rel='stylesheet' href='game-page.css'/>
+        <link rel="icon" type="image/png" href="Imagenes/ArveniaInteractive1.png">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap'>
+        <link href='https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@400;700&display=swap' rel='stylesheet'>
+    </head>
+    <body>
+
+        <div class='content'>
+            <div id='top'></div>
+
+            <!-- Taskbar -->
+            <div class='taskbar'>
+                <input type='checkbox' id='toggle-sidebar' style='display: none;'>
+                <label for='toggle-sidebar' class='menu-trigger'>
+                    <img src='imagenes/Sidebar.png' alt='Menu'>
+                </label>
+                <a href='#top' class='taskbar-home'>
+                    <span class='home-icon'>⌂</span>
+                    <span class='home-text'>Home</span>
+                </a>
+                <div class='taskbar-center'>
+                    <img src='Imagenes/ArveniaInteractive1.png' class='main-logo'/>
+                </div>
+                <div class='taskbar-right'>
+                    <input type='search' placeholder='Search...'>
+                </div>
+                <div class='sidebar-arvenia'>
+                    <nav>
+                        <a href='index.html' class='side-item'>Home</a>
+                        <a href='index.html#news' class='side-item'>News</a>
+                        <a href='index.html#community' class='side-item'>Community</a>
+                        <a href='games.html' class='side-item'>Games</a>
+                        <a href='updates&team.html' class='side-item'>Updates</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Game Hero Banner -->
+            <div class='game-hero'>
+                <img src='Imagenes/game1.png' alt='Juego 1' class='game-hero-img'>
+                <div class='game-hero-overlay'></div>
+                <div class='game-hero-content'>
+                    <span class='game-genre'>Simulation</span>
+                    <h1 class='game-hero-title'>Farmland Sim</h1>
+                    <p class='game-hero-tagline'>Create your own Farm from scratch and hope. Buy terrains, Trucks, better 
+                                                 crops and expand yor farmland as far as you can!</p>
+                </div>
+            </div>
+
+            <!-- Game Info -->
+            <div class='game-page'>
+
+                <div class='game-page-main'>
+
+                    <!-- Descripción -->
+                    <section class='game-section'>
+                        <h2 class='section-title'>About the Game</h2>
+                        <p class='section-text'>Take control of your own fields in Farmland Sim, a single-player 
+                                                experience focused on deep mechanics and authentic gameplay. From strategic 
+                                                land acquisition to seasonal crop management, every decision counts in your 
+                                                journey to build a rural empire.</p> <br>
+                        <p class='section-text'>Farmland Sim: Key Features <br>
+                                                Total Management: Trade land, vehicles, and goods in a dynamic market. <br>
+                                                Realistic Simulation: Physics-based driving, day/night cycles, and seasons. <br>
+                                                Smart Economy: Manage water and power costs with sustainable energy options. <br>
+                                                Master the elements. Build your legacy.</p>
+                    </section>
+
+                    <!-- Características -->
+                    <section class='game-section'>
+                        <h2 class='section-title'>Features</h2>
+                        <ul class='game-features'>
+                            <li>Farmland Purchase</li>
+                            <li>Crops Growth and diferent Clients</li>
+                            <li>Truck driving</li>
+                            <li>Day and Nighttime and Seasons Mechanics</li>
+                            <li>Autosustentable Energy and Water</li>
+                        </ul>
+                    </section>
+
+                    <!-- Galería -->
+                    <section class='game-section'>
+                        <h2 class='section-title'>Galery</h2>
+                        <div class='game-gallery'>
+                            <img src='Imagenes/juego1-ss1.png' alt='Screenshot 1' class='gallery-img'>
+                            <img src='Imagenes/juego1-ss2.png' alt='Screenshot 2' class='gallery-img'>
+                            <img src='Imagenes/juego1-ss3.png' alt='Screenshot 3' class='gallery-img'>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Sidebar de info -->
+                <aside class='game-sidebar'>
+                    <div class='game-meta'>
+                        <div class='meta-item'>
+                            <span class='meta-label'>Genre</span>
+                            <span class='meta-value'>Simulation</span>
+                        </div>
+                        <div class='meta-item'>
+                            <span class='meta-label'>Plataform</span>
+                            <span class='meta-value'>Roblox | All Devices</span>
+                        </div>
+                        <div class='meta-item'>
+                            <span class='meta-label'>Process</span>
+                            <span class='meta-value'>Under Idea</span>
+                        </div>
+                        <div class='meta-item'>
+                            <span class='meta-label'>Launch</span>
+                            <span class='meta-value'>Late 2027</span>
+                        </div>
+                    </div>
+                    <a href='#' class='game-cta-btn'>Wishlist</a>
+                    <a href='games.html' class='game-back-btn'>← Go back</a>
+                </aside>
+
+            </div>
+        </div>
+        <script src='script.js'></script>
+    </body>
+</html>

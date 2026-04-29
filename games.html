@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Games | Arvenia Interactive</title>
+        
+        <!-- Links -->
+        <link rel='stylesheet' href='games.css'/>
+        <link rel="icon" type="image/png" href="Imagenes/ArveniaInteractive1.png">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap'>
+        <link href='https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@400;700&display=swap' rel='stylesheet'>
+        
+    </head>
+    <body>
+    
+    <!-- Content -->
+        <div class='content'>
+            <div id='top'></div>
+            <!-- Taskbar -->
+            <div class='taskbar'>
+                <input type='checkbox' id='toggle-sidebar' style='display: none;'>
+                <label for='toggle-sidebar' class='menu-trigger'>
+                    <img src='imagenes/Sidebar.png' alt='Menu'>
+                </label>
+                <a href='#top' class='taskbar-home'>
+                    <span class='home-icon'>⌂</span>
+                    <span class='home-text'>Home</span>
+                </a>
+                <div class='taskbar-center'>
+                    <img src='Imagenes/ArveniaInteractive1.png' class='main-logo'/>
+                </div>
+                <div class='taskbar-right'>
+                    <input type='search' placeholder='Search...'>
+                </div>
+                <div class='sidebar-arvenia'>
+                    <nav>
+                        <a href='index.html' class='side-item'>Home</a>
+                        <a href='index.html#news' class='side-item'>News</a>
+                        <a href='index.html#community' class='side-item'>Community</a>
+                        <a href='#top' class='side-item active'>Games</a>
+                        <a href='updates&team.html' class='side-item'>Updates</a>
+                    </nav>
+                </div> 
+            </div>
+            
+            <!-- Games -->
+            <div class='games'>
+
+                <!-- Juego Destacado -->
+                <div class='games-featured'>
+                    <div class='game-card featured'>
+                        <div class='game-card-banner'>
+                            <img src='Imagenes/game1.png' alt='Juego 1' class='game-banner-img'>
+                            <div class='game-card-overlay'></div>
+                        </div>
+                        <div class='game-card-info'>
+                            <span class='game-genre'>Simulation</span>
+                            <h2 class='game-title'>Farmland Sim</h2>
+                            <p class='game-desc'>Create your own Farm from scratch and hope. Buy terrains, Trucks, better 
+                                                 crops and expand yor farmland as far as you can!</p>
+                            <a href='game1.html' class='game-btn'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid de Juegos -->
+                <div class='games-grid'>
+
+                    <div class='game-card small'>
+                        <div class='game-card-banner'>
+                            <img src='Imagenes/game2.png' alt='Juego 2' class='game-banner-img'>
+                            <div class='game-card-overlay'></div>
+                        </div>
+                        <div class='game-card-info'>
+                            <span class='game-genre'>Género 2</span>
+                            <h3 class='game-title'>Juego 2</h3>
+                            <p class='game-desc'>Short Game Description. Briefly introduce the game here.</p>
+                            <a href='game2.html' class='game-btn'>Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class='game-card small'>
+                        <div class='game-card-banner'>
+                            <img src='Imagenes/game3.png' alt='Juego 3' class='game-banner-img'>
+                            <div class='game-card-overlay'></div>
+                        </div>
+                        <div class='game-card-info'>
+                            <span class='game-genre'>Género 3</span>
+                            <h3 class='game-title'>Juego 3</h3>
+                            <p class='game-desc'>Short Game Description. Briefly introduce the game here.</p>
+                            <a href='game3.html' class='game-btn'>Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class='game-card small'>
+                        <div class='game-card-banner'>
+                            <img src='Imagenes/game4.png' alt='Juego 4' class='game-banner-img'>
+                            <div class='game-card-overlay'></div>
+                        </div>
+                        <div class='game-card-info'>
+                            <span class='game-genre'>Género 4</span>
+                            <h3 class='game-title'>Juego 4</h3>
+                            <p class='game-desc'>Descripción corta del Juego 4. Introduce brevemente el juego aquí.</p>
+                            <a href='game4.html' class='game-btn'>Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class='game-card small'>
+                        <div class='game-card-banner'>
+                            <img src='Imagenes/game5.png' alt='Juego 5' class='game-banner-img'>
+                            <div class='game-card-overlay'></div>
+                        </div>
+                        <div class='game-card-info'>
+                            <span class='game-genre'>Género 5</span>
+                            <h3 class='game-title'>Juego 5</h3>
+                            <p class='game-desc'>Short Game Description. Briefly introduce the game here.</p>
+                            <a href='game5.html' class='game-btn'>Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        <script src='script.js'></script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Arvenia Interactive</title>
+        
+        <!-- Links -->
+        <link rel='stylesheet' href='styles.css'/>
+        <link rel="icon" type="image/png" href="Imagenes/ArveniaInteractive1.png">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap'>
+        <link href='https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@400;700&display=swap' rel='stylesheet'>
+        
+    </head>
+    
+    <body>
+        
+        <!-- Content -->
+        <div class='content'>
+            <div id='top'></div>
+            
+            <!-- Taskbar -->
+            <div class='taskbar'> 
+                <input type='checkbox' id='toggle-sidebar' style='display: none;'>
+                <label for='toggle-sidebar' class='menu-trigger'>
+                    <img src='Imagenes/Sidebar.png' alt='Menu'>
+                </label>
+
+                <a href='#top' class='taskbar-home'>
+                    <span class='home-icon'>⌂</span>
+                    <span class='home-text'>Home</span>
+                </a>
+
+                <div class='taskbar-center'>
+                    <img src='Imagenes/ArveniaInteractive1.png' class='main-logo'/>
+                </div>
+
+                <div class='taskbar-right'>
+                    <input type='search' placeholder='Search...'>
+                </div>
+
+                <div class='sidebar-arvenia'>
+                    <nav>
+                        <a href='#top' class='side-item active'>Home</a>
+                        <a href='#news' class='side-item'>News</a>
+                        <a href='#community' class='side-item'>Community</a>
+                        <a href='games.html' class='side-item'>Games</a>
+                        <a href='updates&team.html' class='side-item'>Updates</a>
+                    </nav>
+                </div> 
+            </div>
+            
+            <!-- Frontpage -->
+            <div class='frontpage' id='frontpage'>
+                
+                <div class='background-frontpage'>
+                    
+                    <video autoplay muted loop playsinline class='background-frontpage'>
+                        <source src='Videos%20&%20GIF/frontpagebg.mp4' type='video/mp4'>
+                    </video>
+                    
+                    <div class='title-frontpage'>
+                        <h1>Arvenia Interactive</h1>
+                        <br>
+                        <p>Creative Digital Studio</p>
+                    </div>
+                    
+                    <button class='button-frontpage' href='games.html'>Explore Projects</button>
+                    
+                </div>
+            </div>
+            
+            <!-- News -->
+            <div class='news' id='news'>
+                
+                <h1 class='newstitle'>News</h1>
+                
+                <div class='news-post'>
+                    <div class='newspost-content'>
+                        <h1>Big News! Arvenia is Officially Leveling Up</h1> <br> <br>
+                        <div class='newspost-low'>
+                            <p>We are beyond excited to officially launch Arvenia 1.1.0! This isn’t just a simple update;
+                               it’s a complete overhaul designed to provide a faster, smoother, and more immersive
+                               experience. From a refined user interface to optimized performance, every single detail 
+                               has been reworked to ensure that our platform meets the high standards our community deserves.
+                               <br> <br>
+                               This milestone marks the beginning of a new era for us. Arvenia 2.0.0 lays the groundwork 
+                               for all the ambitious projects we have lined up, including our upcoming game development. 
+                               We invite you to explore the new features, enjoy the improved stability, and join us as we 
+                               continue to push the boundaries of what’s possible. Welcome to the next level!</p>
+                            <img class='newspost-low' src='Imagenes/Newsimage1.png'/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='news-post'>
+                    <div class='newspost-content'>
+                        <h1>The Future of Arvenia: Project #1</h1> <br> <br>
+                        <div class='newspost-low'>
+                            <p>Now that the official Arvenia platform is live and fully polished, it’s finally time to 
+                               pull back the curtain on our next big chapter. We are incredibly proud to share that our 
+                               team has officially shifted gears toward game development, with our very first title now 
+                               actively being built from the ground up! This project represents everything we’ve been 
+                               working toward, and we couldn't be more excited to finally bring this vision to life for
+                               all of you.
+                               <br> <br>
+                               We want you with us every step of the way. Stay tuned to our feed for exclusive 
+                               behind-the-scenes updates, development milestones, and early announcements. We’re just 
+                               getting started, and we can’t wait to show you what we’ve been cooking up!
+                               </p>
+                            <img class='newspost-low' src='Imagenes/Newsimage2.png'/>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Community -->
+            <div class='community' id='community'>
+                <h1 class='communitytitle'>Community</h1>
+
+                <div class='community-card'>
+                    <div class='community-card-left'>
+                        <h2>Discord</h2>
+                         <p>Join our community on Discord and get early access to news, behind-the-scenes development, 
+                            fan art contests, and the exclusive <span>Early Supporter </span></p>
+                    </div>
+                    <a href='https://discord.com/channels/1470951484832219156/1470951484832219158' target='_blank' 
+                       class='community-btn discord-btn'>Join Discord</a>
+                </div>
+
+                <div class='community-divider'></div>
+
+                <div class='community-card'>
+                    <div class='community-card-left'>
+                        <h2>Roblox</h2>
+                        <p>Join the official Roblox group and get access to exclusive events, free cosmetic items,
+                           founder badges, and votes to decide the future of the game.</p>
+                    </div>
+                    <a href='TU_LINK_ROBLOX' target='_blank' class='community-btn roblox-btn'>Join Roblox</a>
+                </div>
+            </div>
+        </div>
+        <script src='script.js'></script>
+    </body>
+</html>

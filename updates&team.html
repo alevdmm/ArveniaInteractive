@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Updates | Arvenia Interactive</title>
+
+        <!-- Links -->
+        <link rel='stylesheet' href='updates&team.css'/>
+        <link rel="icon" type="image/png" href="Imagenes/ArveniaInteractive1.png">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap'>
+        <link href='https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@400;700&display=swap' rel='stylesheet'>
+
+    </head>
+
+    <body>
+
+        <!-- Content -->
+        <div class='content'>
+            <div id='top'></div>
+
+            <!-- Taskbar -->
+            <div class='taskbar'>
+                <input type='checkbox' id='toggle-sidebar' style='display: none;'>
+                <label for='toggle-sidebar' class='menu-trigger'>
+                    <img src='imagenes/Sidebar.png' alt='Menu'>
+                </label>
+
+                <a href='#top' class='taskbar-home'>
+                    <span class='home-icon'>⌂</span>
+                    <span class='home-text'>Home</span>
+                </a>
+
+                <div class='taskbar-center'>
+                    <img src='Imagenes/ArveniaInteractive1.png' class='main-logo'/>
+                </div>
+
+                <div class='taskbar-right'>
+                    <input type='search' placeholder='Search...'>
+                </div>
+
+                <div class='sidebar-arvenia'>
+                    <nav>
+                        <a href='index.html' class='side-item'>Home</a>
+                        <a href='index.html#news' class='side-item'>News</a>
+                        <a href='index.html#community' class='side-item'>Community</a>
+                        <a href='games.html' class='side-item'>Games</a>
+                        <a href='#top' class='side-item active'>Updates</a>
+                    </nav>
+                </div> 
+            </div>
+            
+            <!-- Updates -->
+            <div class='updates'>
+                <div class="updates-wrapper">
+
+                    <div class="updates-card">
+                        <button class="updates-toggle" onclick="toggleUpdates()">
+                            <div class="updates-toggle-left">
+                                <div class="updates-dot dot-green"></div>
+                                <span class="updates-title">Past Updates</span>
+                                <span class="updates-badge">1 new</span>
+                            </div>
+                            <svg class="updates-arrow" id="updates-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+
+                        <div class="updates-body" id="updates-body">
+                            <ul class="updates-list">
+
+                                <li class="update-item">
+                                    <div class="update-dot dot-blue"></div>
+                                    <div class="update-content">
+                                        <p class="update-title">1.0.0 | Born</p>
+                                        <p class="update-desc">All basic functions have been successfully implemented..</p>
+                                    </div>
+                                    <span class="update-date">16/01/2026</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        
+                        <div class='micro-updates' id='microupdates'>
+                        
+                        </div>
+                        
+                    </div>
+                        <div class='recent-update'>
+                            <div class=recent-update-text>
+                                <p class="updates-last">Latest Update: <span>20/04/2026</span></p> <br>
+                                <h1>1.1.0 | Reborn</h1> <br>
+                                <p>In this update, we've decided to redesign the site, giving it a more modern color palette,
+
+                                   a more user-friendly and pleasant interface, a complete overhaul of the updates page,
+
+                                   and the implementation of the Discord group link, which you can join via the link in the
+                                   community section on the homepage.</p>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+
+        </div>
+        <script src='script.js'></script>
+    </body>
+</html>

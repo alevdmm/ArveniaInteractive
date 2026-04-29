@@ -1,0 +1,231 @@
+* {margin: 0;
+   padding: 0;
+   font-weight: 300;
+   box-sizing: border-box;
+   font-family: 'Lexend Deca', sans-serif;}
+
+html {overflow-x: hidden;
+      scroll-behavior: smooth;}
+
+body {overflow-x: hidden;
+      scroll-behavior: smooth;
+      background-color: #0d1117;}
+
+/* Taskbar */
+.taskbar {position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 60px;
+          background: #0d1117;
+          backdrop-filter: blur(12px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 20px;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          z-index: 1000;}
+
+.menu-trigger {margin-right: 20px;
+               cursor: pointer;
+               display: flex;
+               align-items: center;
+               z-index: 10001;}
+
+.menu-trigger img {width: 60px;
+                   height: auto;}
+
+.taskbar-home {color: #ffffff;
+               text-decoration: none;
+               font-family: 'Lexend Deca', sans-serif;
+               font-size: 18px;
+               display: flex;
+               align-items: center;
+               gap: 6px;
+               padding: 6px 14px;
+               border-bottom: 2px solid transparent;
+               transition: border-color 0.3s, color 0.3s;}
+
+.taskbar-home:hover {border-bottom-color: #ffffff;}
+
+.home-icon {font-size: 18px;}
+
+.taskbar-center {position: absolute;
+                 left: 50%;
+                 transform: translateX(-50%);
+                 display: flex;
+                 align-items: center;}
+
+.main-logo {height: 50px;
+            border-radius: 10px;
+            object-fit: contain;}
+
+.taskbar-right {flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                padding-left: 25%;}
+
+.taskbar-right input {background: #2d2d2d;
+                      border: 1px solid #555555;
+                      color: #ffffff;
+                      padding: 5px 10px;
+                      border-radius: 4px;
+                      width: 200px;
+                      font-family: 'Lexend Deca', sans-serif;}
+
+/* Sidebar */
+.sidebar-arvenia {position: fixed;
+                  top: 60px;
+                  left: -260px;
+                  width: 260px;
+                  opacity: 95%;
+                  height: calc(100vh - 60px);
+                  background: #090e16;
+                  border-right: 1px solid #333333;
+                  transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                  z-index: 9999;
+                  display: flex;
+                  flex-direction: column;
+                  padding-top: 15px;}
+
+#toggle-sidebar:checked ~ .sidebar-arvenia {left: 0;}
+
+.side-item {display: block;
+            padding: 15px 25px;
+            color: #888888;
+            text-decoration: none;
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 14px;
+            border-left: 4px solid transparent;
+            transition: 0.3s;}
+
+.side-item:hover, .side-item.active {color: #ffffff;
+                                     background: rgba(255, 255, 255, 0.05);
+                                     border-left-color: #ffffff;}
+
+/* Updates */
+.updates {position: fixed;
+          left: 25px; 
+          right: 25px; 
+          top: 85px; 
+          z-index: 100; 
+          display: flex; 
+          align-items: flex-end; 
+          pointer-events: none;}
+
+.updates-wrapper {width: 100%;
+                  font-family: 'Lexend Deca', sans-serif;
+                  pointer-events: auto;}
+
+.updates-card {background-color: #111927;
+               border: 1px solid rgba(255,255,255,0.15);
+               border-radius: 8px;
+               box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+               overflow: hidden;
+               transition: all 0.4s ease;}
+
+.updates-card:hover {background-color: #202530;}
+
+.updates-toggle {width: 100%;
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-between;
+                 padding: 14px 18px;
+                 background: transparent;
+                 border: none;
+                 border-bottom: 1px solid rgba(255,255,255,0.08);
+                 cursor: pointer;}
+
+.updates-toggle:hover {background: rgba(255,255,255,0.05);}
+
+.updates-toggle-left {display: flex;
+                      align-items: center;
+                      gap: 10px;}
+
+.updates-title {color: #ffffff;
+                font-size: 14px;
+                font-weight: 300;
+                font-family: 'Lexend Deca', sans-serif;}
+
+.updates-badge {font-size: 11px;
+                color: #888888;
+                background: rgba(255,255,255,0.05);
+                padding: 2px 8px;
+                border-radius: 99px;
+                border: 1px solid rgba(255,255,255,0.1);
+                font-family: 'Lexend Deca', sans-serif;}
+
+.updates-arrow {color: #888888;
+                transition: transform 0.3s ease;
+                flex-shrink: 0;}
+
+.updates-arrow.open {transform: rotate(180deg);}
+
+.updates-body {max-height: 0;
+               overflow: hidden;
+               transition: max-height 0.35s ease;}
+
+.updates-list {list-style: none;
+               margin: 0;
+               padding: 0;}
+
+.update-item {display: flex;
+              gap: 14px;
+              padding: 14px 18px;
+              border-bottom: 1px solid rgba(255,255,255,0.08);
+              align-items: flex-start;}
+
+.updates-last-item {border-bottom: none;}
+
+.update-dot {min-width: 8px;
+             height: 8px;
+             border-radius: 50%;
+             margin-top: 5px;}
+
+.dot-green {background: #1D9E75;}
+.dot-blue  {background: #378ADD;}
+.dot-gray  {background: #555555;}
+
+.update-content {flex: 1;}
+
+.update-title {color: #ffffff;
+               font-size: 13px;
+               font-weight: 300;
+               font-family: 'Lexend Deca', sans-serif;
+               margin: 0;}
+
+.update-desc {color: #888888;
+              font-size: 12px;
+              font-family: 'Lexend Deca', sans-serif;
+              font-weight: 300;
+              line-height: 1.5;
+              margin: 4px 0 0;}
+
+.update-date {font-size: 11px;
+              color: #555555;
+              white-space: nowrap;
+              padding-top: 2px;
+              margin-left: auto;
+              font-family: 'Lexend Deca', sans-serif;}
+
+.updates-last {margin: 10px 0 0 4px;
+               font-size: 12px;
+               color: #555555;
+               font-family: 'Lexend Deca', sans-serif;
+               font-weight: 300;}
+
+.updates-last span {color: #888888;
+                    font-weight: 300;}
+
+.recent-update {background-color: #111927;
+                margin-top: 25px;
+                border: 1px solid rgba(255,255,255,0.15);
+                border-radius: 8px;
+                box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+                overflow: hidden;
+                transition: all 0.4s ease;}
+
+.recent-update:hover {background-color: #202530;}
+
+.recent-update-text {color: white;
+                     margin: 25px;}

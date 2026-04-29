@@ -1,0 +1,205 @@
+* {margin: 0;
+   padding: 0;
+   font-weight: 300;
+   box-sizing: border-box;
+   font-family: 'Lexend Deca', sans-serif;}
+
+html {overflow-x: hidden;
+      scroll-behavior: smooth;}
+
+body {overflow-x: hidden;
+      scroll-behavior: smooth;
+      background-color: #0d1117;}
+
+/* Taskbar */
+.taskbar {position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 60px;
+          background: #0d1117;
+          backdrop-filter: blur(12px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 20px;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          z-index: 1000;}
+
+.menu-trigger {margin-right: 20px;
+               cursor: pointer;
+               display: flex;
+               align-items: center;
+               z-index: 10001;}
+
+.menu-trigger img {width: 60px;
+                   height: auto;}
+
+.taskbar-home {color: #ffffff;
+               text-decoration: none;
+               font-family: 'Lexend Deca', sans-serif;
+               font-size: 18px;
+               display: flex;
+               align-items: center;
+               gap: 6px;
+               padding: 6px 14px;
+               border-bottom: 2px solid transparent;
+               transition: border-color 0.3s, color 0.3s;}
+
+.taskbar-home:hover {border-bottom-color: #ffffff;}
+
+.home-icon {font-size: 18px;}
+
+.taskbar-center {position: absolute;
+                 left: 50%;
+                 transform: translateX(-50%);
+                 display: flex;
+                 align-items: center;}
+
+.main-logo {height: 50px;
+            border-radius: 10px;
+            object-fit: contain;}
+
+.taskbar-right {flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                padding-left: 25%;}
+
+.taskbar-right input {background: #2d2d2d;
+                      border: 1px solid #555555;
+                      color: #ffffff;
+                      padding: 5px 10px;
+                      border-radius: 4px;
+                      width: 200px;
+                      font-family: 'Lexend Deca', sans-serif;}
+
+/* Sidebar */
+.sidebar-arvenia {position: fixed;
+                  top: 60px;
+                  left: -260px;
+                  width: 260px;
+                  opacity: 95%;
+                  height: calc(100vh - 60px);
+                  background: #090e16;
+                  border-right: 1px solid #333333;
+                  transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                  z-index: 9999;
+                  display: flex;
+                  flex-direction: column;
+                  padding-top: 15px;}
+
+#toggle-sidebar:checked ~ .sidebar-arvenia {left: 0;}
+
+.side-item {display: block;
+            padding: 15px 25px;
+            color: #888888;
+            text-decoration: none;
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 14px;
+            border-left: 4px solid transparent;
+            transition: 0.3s;}
+
+.side-item:hover, .side-item.active {color: #ffffff;
+                                     background: rgba(255, 255, 255, 0.05);
+                                     border-left-color: #ffffff;}
+
+/* Games */
+.games {color: white;
+        margin: 85px 25px 0 25px;}
+
+/* Games Featured */
+.games-featured {margin-bottom: 25px;}
+
+/* Games Grid - 2 por fila */
+.games-grid {display: grid;
+             grid-template-columns: repeat(2, 1fr);
+             gap: 25px;}
+
+/* Game Card Base */
+.game-card {background: #0f1d2e;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;}
+
+.game-card:hover {transform: translateY(-5px);
+                  box-shadow: 0 12px 40px rgba(0,0,0,0.5);}
+
+/* Banner */
+.game-card-banner {position: relative;
+                   width: 100%;
+                   overflow: hidden;}
+
+.game-card.featured .game-card-banner {height: 340px;}
+
+.game-card.small .game-card-banner {height: 200px;}
+
+.game-banner-img {width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                  transition: transform 0.4s ease;}
+
+.game-card:hover .game-banner-img {transform: scale(1.04);}
+
+.game-card-overlay {position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 60%;
+                    pointer-events: none;}
+
+/* Info */
+.game-card-info {padding: 18px 22px 22px 22px;
+                 display: flex;
+                 flex-direction: column;
+                 gap: 10px;
+                 flex: 1;}
+
+/* Genre Tag */
+.game-genre {display: inline-block;
+             background: rgba(255,255,255,0.07);
+             color: #aaaaaa;
+             font-size: 11px;
+             letter-spacing: 1.2px;
+             text-transform: uppercase;
+             padding: 4px 10px;
+             border-radius: 4px;
+             border: 1px solid rgba(255,255,255,0.1);
+             width: fit-content;}
+
+/* Title */
+.game-title {color: #ffffff;
+             font-family: 'Lexend Exa', sans-serif;
+             font-weight: 700;
+             line-height: 1.2;}
+
+.game-card.featured .game-title {font-size: 26px;}
+
+.game-card.small .game-title {font-size: 18px;}
+
+/* Description */
+.game-desc {color: #8a9ab5;
+            font-size: 13px;
+            line-height: 1.6;
+            flex: 1;}
+
+/* Button */
+.game-btn {display: inline-block;
+           margin-top: 6px;
+           padding: 10px 22px;
+           background: transparent;
+           border: 1px solid rgba(255,255,255,0.25);
+           color: #ffffff;
+           font-family: 'Lexend Deca', sans-serif;
+           font-size: 13px;
+           letter-spacing: 0.5px;
+           border-radius: 6px;
+           text-decoration: none;
+           width: fit-content;
+           transition: background 0.3s, border-color 0.3s;}
+
+.game-btn:hover {background: rgba(255,255,255,0.1);
+                 border-color: rgba(255,255,255,0.6);}
